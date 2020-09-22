@@ -9,8 +9,20 @@
     
 </head>
 <body>
-    <input type="text", id="txt1">
-    <input type="button", id="button", value = "Click me!">
-    <script src="jquery-intro.js"></script>
+    <a href="http://jquery.com/">jQuery</a>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("a").addClass("test");
+        $("a").click(function(event){
+            alert("Thanks for visiting!");
+            event.preventDefault();
+            $(this).hide("slow");
+        });
+
+        });
+    
+ 
+    </script>
 </body>
 </html>
